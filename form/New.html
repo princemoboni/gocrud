@@ -1,0 +1,17 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+    <form  method="POST" action="insert">
+        <div class="row">
+          <div class="col">
+              <label> <h2>Name</h2> </label> <input type="text" class="form-control" name="name">
+          </div>
+          <div class="col">
+              <label> <h2>Surname</h2> </label> <input type="text" class="form-control" name="surname">
+          </div>
+          <button type="submit" class="btn btn-secondary">SUBMIT</button>
+          </div>
+      </form>
+      
+  {{ template "Footer" }}
+{{ end }}
